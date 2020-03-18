@@ -1,6 +1,12 @@
 <script>
 	export default {
-		onLaunch: function() {
+        globalData: {
+            token: '',
+            provider: '',
+            openId: ''
+        },
+        onLaunch: function() {
+
 			console.log('App Launch')
 		},
 		onShow: function() {
@@ -14,4 +20,7 @@
 
 <style>
 	/*每个页面公共css */
+    @import './common/base.css';
+    @import 'common/iconfont.css';
+
 </style>
